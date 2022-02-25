@@ -1,10 +1,11 @@
-// import heroes from './data/heroes'
-// import { heroes } from './data/heroes'
-// import {heroes, owners } from './data/heroes'
-import heroes, { owners } from "../data/heroes";
-console.log(owners);
+import heroes from '../data/heroes'
+// import { heroes } from '../data/heroes'
+// import {heroes, owners } from '../data/heroes'
+// import heroes, { owners } from "../data/heroes";
+// console.log(owners);
 
-const getHeroeByID = (id) => heroes.find((heroe) => heroe.id === id) || {};
+export const getHeroeByID = (id) =>
+    heroes.find((heroe) => heroe.id === id);
 // return heroes.find(heroe => {
 //     if (heroe.id === id) {
 //         return true
@@ -12,9 +13,9 @@ const getHeroeByID = (id) => heroes.find((heroe) => heroe.id === id) || {};
 //     return false
 // })
 
-console.log(getHeroeByID(2));
+// console.log(getHeroeByID(2));
 
-const getHeroeByOwner = (owner) =>
+export const getHeroeByOwner = (owner) =>
     heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroeByOwner("DCS"));
+// console.log(getHeroeByOwner("DCS"));
